@@ -7,4 +7,4 @@ dirx=${dirx#/}			# remove /
 ssdx="${dirx:0:4}"
 name=$(echo "$dirx" | sed 's/\//./g')
 
-docker run -v $HOME:/mnt/aosp -it --rm --name $name erwinchang/px30 /bin/bash
+docker run -v $HOME:/mnt/aosp -it --rm --name $name erwinchang/buildroot-pi /bin/bash
